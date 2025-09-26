@@ -1,0 +1,54 @@
+{
+  "schemas": [
+    {
+      "id": "order",
+      "file": "schema-order.json",
+      "instances": [
+        "instances/order1.json",
+        "instances/order2.json",
+        "instances/order3.json"
+      ],
+      "description": "Online order schema with nested items, totals, and customer info."
+    },
+    {
+      "id": "account",
+      "file": "schema-account.json",
+      "instances": [
+        "instances/account1.json",
+        "instances/account2.json",
+        "instances/account3.json"
+      ],
+      "description": "User account schema with profile, preferences, and audit trail."
+    },
+    {
+      "id": "sensor",
+      "file": "schema-sensor.json",
+      "instances": [
+        "instances/sensor1.json",
+        "instances/sensor2.json",
+        "instances/sensor3.json"
+      ],
+      "description": "IoT sensor data schema with time series readings and metadata."
+    },
+    {
+      "id": "supplychain",
+      "file": "schema-supplychain.json",
+      "instances": [
+        "instances/supplychain1.json",
+        "instances/supplychain2.json",
+        "instances/supplychain3.json"
+      ],
+      "description": "Supply chain schema covering suppliers, warehouses, and shipments."
+    },
+    {
+      "id": "userprofile",
+      "file": "schema-userprofile.json",
+      "instances": [
+        "instances/userprofile1.json",
+        "instances/userprofile2.json",
+        "instances/userprofile3.json"
+      ],
+      "description": "User profile schema with billing, shipping, and supplier addresses (deliberately duplicating address structures)."
+    }
+  ]
+}

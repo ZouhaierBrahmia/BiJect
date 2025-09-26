@@ -1,0 +1,17 @@
+{
+  "userId": "u1001",
+  "name": { "first": "Alice", "last": "Wong" },
+  "email": "alice@example.com",
+  "billingAddress": {
+    "street": "12 King Street",
+    "city": "London",
+    "zip": "SW1A 1AA",
+    "country": "UK"
+  },
+  "shippingAddress": {
+    "street": "55 Queen Road",
+    "city": "London",
+    "zip": "SW1A 2BB",
+    "country": "UK"
+  }
+}

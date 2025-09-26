@@ -1,0 +1,55 @@
+{
+  "users": [
+    {
+      "id": "1234567890abcdef1234567890abcdef1234",
+      "profile": {
+        "name": "Alice",
+        "address": { "street": "1 Main St", "city": "Paris", "zip": "75001" },
+        "contacts": [
+          {
+            "email": "alice@example.com",
+            "phone": "0123456789",
+            "address": { "street": "1 Main St", "city": "Paris", "zip": "75001" }
+          }
+        ]
+      }
+    },
+    {
+      "id": "abcdefabcdefabcdefabcdefabcdefabcdef",
+      "profile": {
+        "name": "Bob",
+        "address": { "street": "42 High St", "city": "London", "zip": "SW1A1AA" },
+        "contacts": [
+          {
+            "email": "bob@example.com",
+            "phone": "02079460000",
+            "address": { "street": "42 High St", "city": "London", "zip": "12345" }
+          }
+        ]
+      }
+    }
+  ],
+  "categories": [
+    {
+      "name": "Electronics",
+      "subcategories": [
+        {
+          "name": "Computers",
+          "subcategories": [
+            { "name": "Laptops", "subcategories": [] }
+          ]
+        }
+      ]
+    }
+  ],
+  "matrix": [
+    [
+      [1, 2, 3],
+      [10, 20, 30]
+    ],
+    [
+      [100, 200],
+      [300, 400]
+    ]
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "user": {
+    "name": "Bob",
+    "address": {
+      "street": "789 Elm St"
+    }
+  },
+  "billing": {
+    "address": {
+      "city": "Shelbyville"
+    }
+  }
+}

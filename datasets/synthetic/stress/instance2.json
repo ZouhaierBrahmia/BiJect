@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "id": "short-id",  // ❌ invalid: does not match 36-char pattern
+      "profile": {
+        "address": { "street": "No Zip Street", "city": "Berlin" }  // ❌ missing required "zip"
+      }
+    },
+    {
+      "id": "111111111111111111111111111111111111",
+      "profile": {
+        "name": "Charlie",
+        "address": { "street": "Long Rd", "city": "Rome", "zip": "ABCDE" },  // ❌ zip not numeric
+        "contacts": [
+          {
+            "email": "not-an-email",  // ❌ invalid format
+            "phone": "123"           // ❌ too short
+          }
+        ]
+      }
+    }
+  ],
+  "categories": [
+    {
+      "name": "Root",
+      "subcategories": [
+        {
+          // ❌ missing "name" required field
+          "subcategories": []
+        }
+      ]
+    }
+  ],
+  "matrix": [
+    [
+      [999999, -5]  // ❌ -5 is below minimum
+    ]
+  ]
+}

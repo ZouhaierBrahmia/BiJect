@@ -1,0 +1,29 @@
+{
+  "order": {
+    "orderId": "ORD-9001",
+    "customer": {
+      "customerId": "CUST-2001",
+      "name": "ACME Corp",
+      "email": "orders@acme.example"
+    },
+    "items": [
+      { "productId": "P-1001", "quantity": 10, "price": 3.5 }
+    ],
+    "status": "processing"
+  },
+  "shipment": {
+    "carrier": "DHL",
+    "trackingId": "TRK-123456",
+    "departure": "2024-03-01T10:00:00Z",
+    "arrival": "2024-03-05T15:30:00Z"
+  },
+  "qualityCheck": {
+    "inspector": "Jane Doe",
+    "sampleMeasurement": {
+      "timestamp": "2024-03-01T09:30:00Z",
+      "temperature": 5.0,
+      "humidity": 80.0,
+      "status": "OK"
+    }
+  }
+}

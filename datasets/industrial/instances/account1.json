@@ -1,0 +1,8 @@
+{
+  "accountId": "A-123",
+  "balance": 500.0,
+  "transactions": [
+    { "transactionId": "T-1", "amount": -50.0, "timestamp": "2024-01-01T10:00:00Z" },
+    { "transactionId": "T-2", "amount": 100.0, "timestamp": "2024-01-02T12:30:00Z" }
+  ]
+}

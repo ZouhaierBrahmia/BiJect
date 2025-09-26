@@ -1,0 +1,14 @@
+{
+  "industrial": {
+    "schemas": 5,
+    "instances": 15
+  },
+  "synthetic/small": {
+    "schemas": 1,
+    "instances": 2
+  },
+  "synthetic/medium": {
+    "schemas": 1,
+    "instances": 2
+  }
+}

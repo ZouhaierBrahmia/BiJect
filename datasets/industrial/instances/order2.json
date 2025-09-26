@@ -1,0 +1,13 @@
+{
+  "orderId": "ORD-9002",
+  "customer": {
+    "customerId": "CUST-2002",
+    "name": "Global Industries",
+    "email": "contact@global.example"
+  },
+  "items": [
+    { "productId": "P-2001", "quantity": 100, "price": 1.2 },
+    { "productId": "P-2002", "quantity": 50, "price": 2.5 }
+  ],
+  "status": "processing"
+}

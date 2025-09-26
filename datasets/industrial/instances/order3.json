@@ -1,0 +1,12 @@
+{
+  "orderId": "ORD-9003",
+  "customer": {
+    "customerId": "CUST-2003",
+    "name": "Beta Labs",
+    "email": "beta@labs.example"
+  },
+  "items": [
+    { "productId": "P-3001", "quantity": 2, "price": 99.99 }
+  ],
+  "status": "cancelled"
+}

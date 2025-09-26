@@ -1,0 +1,15 @@
+{
+  "user": {
+    "name": "Alice",
+    "address": {
+      "street": "123 Main St",
+      "city": "Springfield"
+    }
+  },
+  "billing": {
+    "address": {
+      "street": "456 Market Ave",
+      "city": "Springfield"
+    }
+  }
+}

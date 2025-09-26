@@ -1,0 +1,18 @@
+{
+  "deviceId": "S-9001",
+  "location": "Zone-1",
+  "measurements": [
+    {
+      "timestamp": "2024-02-01T08:00:00Z",
+      "temperature": 21.5,
+      "humidity": 45.0,
+      "status": "OK"
+    },
+    {
+      "timestamp": "2024-02-01T09:00:00Z",
+      "temperature": 22.0,
+      "humidity": 50.0,
+      "status": "WARN"
+    }
+  ]
+}

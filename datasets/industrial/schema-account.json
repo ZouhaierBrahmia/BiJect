@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.org/schema/account",
+  "title": "Account",
+  "type": "object",
+  "properties": {
+    "accountId": { "type": "string" },
+    "balance": { "type": "number" },
+    "transactions": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/transaction" }
+    }
+  },
+  "required": ["accountId", "balance"],
+  "$defs": {
+    "transaction": {
+      "type": "object",
+      "properties": {
+        "transactionId": { "type": "string" },
+        "amount": { "type": "number" },
+        "timestamp": { "type": "string" }
+      },
+      "required": ["transactionId", "amount"]
+    }
+  }
+}

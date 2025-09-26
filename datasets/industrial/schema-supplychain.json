@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.org/schema/supplychain",
+  "title": "SupplyChainRecord",
+  "type": "object",
+  "properties": {
+    "order": { "$ref": "schema-order.json" },
+    "shipment": {
+      "type": "object",
+      "properties": {
+        "carrier": { "type": "string" },
+        "trackingId": { "type": "string" },
+        "departure": { "type": "string" },
+        "arrival": { "type": "string" }
+      },
+      "required": ["carrier", "trackingId", "departure"]
+    },
+    "qualityCheck": {
+      "type": "object",
+      "properties": {
+        "inspector": { "type": "string" },
+        "sampleMeasurement": { "$ref": "schema-sensor.json#/$defs/measurement" }
+      },
+      "required": ["inspector", "sampleMeasurement"]
+    }
+  },
+  "required": ["order", "shipment"]
+}

@@ -1,0 +1,41 @@
+{
+  "user": {
+    "id": "U1001",
+    "name": "Alice",
+    "contact": {
+      "email": "alice@example.com",
+      "phone": "123-456-7890"
+    },
+    "address": {
+      "street": "123 Main St",
+      "city": "Springfield",
+      "zip": "12345"
+    }
+  },
+  "supplier": {
+    "supplierId": "S2001",
+    "companyName": "Acme Supplies",
+    "contact": {
+      "email": "contact@acme.com",
+      "phone": "987-654-3210"
+    },
+    "address": {
+      "street": "456 Market Ave",
+      "city": "Springfield",
+      "zip": "67890"
+    }
+  },
+  "order": {
+    "orderId": "O3001",
+    "date": "2024-12-01",
+    "shippingAddress": {
+      "street": "789 Elm St",
+      "city": "Shelbyville",
+      "zip": "54321"
+    },
+    "contact": {
+      "email": "shipping@example.com",
+      "phone": "222-333-4444"
+    }
+  }
+}

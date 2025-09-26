@@ -1,0 +1,6 @@
+{
+  "accountId": "ACCT-1002",
+  "name": "Regional Subsidiary",
+  "status": "active",
+  "parentAccount": "ACCT-1001"
+}

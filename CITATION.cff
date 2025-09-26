@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use BiJect, please cite the following."
+title: "BiJect: Semantics-Preserving Bidirectional Transformations of JSON Schema Design Styles — Formal Foundations and JSONiq-Based Implementation"
+authors:
+  - family-names: Brahmia
+    given-names: Zouhaier
+  - family-names: Grandi
+    given-names: Fabio
+version: "1.0.0"
+year: 2025
+url: "https://github.com/<your-username>/BiJect"
+doi: "under preparation"

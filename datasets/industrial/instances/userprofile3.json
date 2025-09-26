@@ -1,0 +1,26 @@
+{
+  "userId": "u1003",
+  "name": { "first": "Laura", "last": "García" },
+  "email": "laura@example.es",
+  "billingAddress": {
+    "street": "Calle Mayor 45",
+    "city": "Madrid",
+    "zip": "28013",
+    "country": "Spain"
+  },
+  "shippingAddress": {
+    "street": "Av. Diagonal 101",
+    "city": "Barcelona",
+    "zip": "08029",
+    "country": "Spain"
+  },
+  "supplierProfile": {
+    "companyName": "Global Shoes Ltd.",
+    "address": {
+      "street": "Hauptstraße 77",
+      "city": "Munich",
+      "zip": "80331",
+      "country": "Germany"
+    }
+  }
+}

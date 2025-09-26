@@ -1,0 +1,12 @@
+{
+  "industrial": {
+    "avg_latency_ms": 3.21,
+    "repeats": 10,
+    "total_pairs": 15
+  },
+  "synthetic/medium": {
+    "avg_latency_ms": 0.42,
+    "repeats": 10,
+    "total_pairs": 2
+  }
+}

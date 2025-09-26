@@ -1,0 +1,29 @@
+{
+  "order": {
+    "orderId": "ORD-9004",
+    "customer": {
+      "customerId": "CUST-2004",
+      "name": "Omega Retail",
+      "email": "orders@omega.example"
+    },
+    "items": [
+      { "productId": "P-4001", "quantity": 5, "price": 15.0 }
+    ],
+    "status": "shipped"
+  },
+  "shipment": {
+    "carrier": "FedEx",
+    "trackingId": "TRK-654321",
+    "departure": "2024-03-05T12:00:00Z",
+    "arrival": "2024-03-12T16:00:00Z"
+  },
+  "qualityCheck": {
+    "inspector": "John Smith",
+    "sampleMeasurement": {
+      "timestamp": "2024-03-05T11:30:00Z",
+      "temperature": 7.0,
+      "humidity": 70.0,
+      "status": "OK"
+    }
+  }
+}

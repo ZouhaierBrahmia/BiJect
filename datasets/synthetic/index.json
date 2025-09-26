@@ -1,0 +1,40 @@
+{
+  "synthetic": {
+    "small": [
+      {
+        "schema": "small/schema1.json",
+        "instances": [
+          "small/instance1.json",
+          "small/instance2.json"
+        ]
+      }
+    ],
+    "medium": [
+      {
+        "schema": "medium/schema1.json",
+        "instances": [
+          "medium/instance1.json",
+          "medium/instance2.json"
+        ]
+      }
+    ],
+    "large": [
+      {
+        "schema": "large/schema1.json",
+        "instances": [
+          "large/instance1.json",
+          "large/instance2.json"
+        ]
+      }
+    ],
+    "stress": [
+      {
+        "schema": "stress/schema1.json",
+        "instances": [
+          "stress/instance1.json",
+          "stress/instance2.json"
+        ]
+      }
+    ]
+  }
+}

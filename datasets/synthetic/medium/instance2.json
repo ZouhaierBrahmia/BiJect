@@ -1,0 +1,32 @@
+{
+  "user": {
+    "id": "U1002",
+    "name": "Bob",
+    "contact": {
+      "phone": "123-456-7890"
+    },
+    "address": {
+      "street": "123 Main St"
+    }
+  },
+  "supplier": {
+    "supplierId": "S2002",
+    "companyName": "Global Inc",
+    "contact": {
+      "email": "invalid-email"
+    },
+    "address": {
+      "city": "Metropolis"
+    }
+  },
+  "order": {
+    "orderId": "O3002",
+    "date": "not-a-date",
+    "shippingAddress": {
+      "street": "111 Fake St"
+    },
+    "contact": {
+      "phone": "111-222-3333"
+    }
+  }
+}

@@ -1,0 +1,5 @@
+# BiJect Python dependencies
+jsonschema>=4.0.0
+
+# For measuring latency with high-resolution timers
+timeit

@@ -1,0 +1,12 @@
+{
+  "orderId": "O-1001",
+  "customer": {
+    "customerId": "C-42",
+    "name": "X"
+  },
+  "items": [
+    { "productId": "P-9", "quantity": 2 },
+    { "productId": "P-17", "quantity": 1 }
+  ],
+  "totalAmount": 199.99
+}

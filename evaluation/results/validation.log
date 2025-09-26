@@ -1,0 +1,5 @@
+✅ VALID: datasets/industrial/schema-order.json → datasets/industrial/instances/order1.json
+✅ VALID: datasets/industrial/schema-order.json → datasets/industrial/instances/order2.json
+❌ INVALID: datasets/synthetic/small/schema1.json → datasets/synthetic/small/instance2.json
+   Reason: 'city' is a required property
+...

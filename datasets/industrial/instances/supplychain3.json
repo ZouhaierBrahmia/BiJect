@@ -1,0 +1,29 @@
+{
+  "order": {
+    "orderId": "ORD-9005",
+    "customer": {
+      "customerId": "CUST-2005",
+      "name": "Delta Chemicals",
+      "email": "purchasing@delta.example"
+    },
+    "items": [
+      { "productId": "P-5001", "quantity": 20, "price": 12.5 }
+    ],
+    "status": "delivered"
+  },
+  "shipment": {
+    "carrier": "UPS",
+    "trackingId": "TRK-999999",
+    "departure": "2024-03-07T07:00:00Z",
+    "arrival": "2024-03-08T18:00:00Z"
+  },
+  "qualityCheck": {
+    "inspector": "Alice Green",
+    "sampleMeasurement": {
+      "timestamp": "2024-03-07T06:30:00Z",
+      "temperature": -5.0,
+      "humidity": 95.0,
+      "status": "ALERT"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "userId": "u1002",
+  "name": { "first": "Mohamed", "last": "Ben Salah" },
+  "email": "mohamed@example.com",
+  "billingAddress": {
+    "street": "Rue Habib Bourguiba",
+    "city": "Tunis",
+    "zip": "1000",
+    "country": "Tunisia"
+  },
+  "shippingAddress": {
+    "street": "Rue Habib Bourguiba",
+    "city": "Tunis",
+    "zip": "1000",
+    "country": "Tunisia"
+  },
+  "supplierProfile": {
+    "companyName": "North Africa Textiles",
+    "address": {
+      "street": "Zone Industrielle",
+      "city": "Sfax",
+      "zip": "3000",
+      "country": "Tunisia"
+    }
+  }
+}

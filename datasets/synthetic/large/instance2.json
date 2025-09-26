@@ -1,0 +1,47 @@
+{
+  "user": {
+    "id": "U5002",
+    "name": "Dana",
+    "contact": {
+      "phone": "111-222-3333"
+    },
+    "address": {
+      "zip": "12345"
+    }
+  },
+  "supplier": {
+    "supplierId": "S9002",
+    "companyName": "BadSupplier",
+    "contact": {
+      "email": "not-an-email"
+    },
+    "address": {
+      "street": "Unknown"
+    }
+  },
+  "orders": [
+    {
+      "orderId": "O7002",
+      "date": "15-01-2025",
+      "shippingAddress": {
+        "street": "404 Error Rd"
+      },
+      "contact": {
+        "phone": "999-888-7777"
+      },
+      "products": [
+        {
+          "productId": "P200",
+          "name": "InvalidProduct",
+          "quantity": 0,
+          "price": -10
+        }
+      ],
+      "payment": {
+        "method": "cash",
+        "amount": -100,
+        "currency": "usd"
+      }
+    }
+  ]
+}

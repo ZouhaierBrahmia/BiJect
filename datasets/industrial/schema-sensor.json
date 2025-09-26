@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.org/schema/sensor",
+  "title": "SensorDevice",
+  "type": "object",
+  "properties": {
+    "deviceId": { "type": "string" },
+    "location": { "type": "string" },
+    "measurements": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/measurement" },
+      "minItems": 1
+    }
+  },
+  "required": ["deviceId", "measurements"],
+  "$defs": {
+    "measurement": {
+      "type": "object",
+      "properties": {
+        "timestamp": { "type": "string" },
+        "temperature": { "type": "number" },
+        "humidity": { "type": "number" },
+        "status": {
+          "type": "string",
+          "enum": ["OK", "WARN", "FAIL"]
+        }
+      },
+      "required": ["timestamp", "temperature", "status"]
+    }
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "datasets": {
+    "industrial": {
+      "schemas": [
+        {
+          "id": "order",
+          "path": "industrial/schema-order.json",
+          "instances": [
+            "industrial/instances/order1.json",
+            "industrial/instances/order2.json",
+            "industrial/instances/order3.json"
+          ]
+        },
+        {
+          "id": "account",
+          "path": "industrial/schema-account.json",
+          "instances": [
+            "industrial/instances/account1.json",
+            "industrial/instances/account2.json",
+            "industrial/instances/account3.json"
+          ]
+        },
+        {
+          "id": "sensor",
+          "path": "industrial/schema-sensor.json",
+          "instances": [
+            "industrial/instances/sensor1.json",
+            "industrial/instances/sensor2.json",
+            "industrial/instances/sensor3.json"
+          ]
+        },
+        {
+          "id": "supplychain",
+          "path": "industrial/schema-supplychain.json",
+          "instances": [
+            "industrial/instances/supplychain1.json",
+            "industrial/instances/supplychain2.json",
+            "industrial/instances/supplychain3.json"
+          ]
+        },
+        {
+          "id": "userprofile",
+          "path": "industrial/schema-userprofile.json",
+          "instances": [
+            "industrial/instances/userprofile1.json",
+            "industrial/instances/userprofile2.json",
+            "industrial/instances/userprofile3.json"
+          ]
+        }
+      ]
+    },
+    "synthetic": {
+      "small": {
+        "schemas": [
+          {
+            "id": "schema1",
+            "path": "synthetic/small/schema1.json",
+            "instances": [
+              "synthetic/small/instance1.json",
+              "synthetic/small/instance2.json"
+            ]
+          }
+        ]
+      },
+      "medium": {
+        "schemas": [
+          {
+            "id": "schema1",
+            "path": "synthetic/medium/schema1.json",
+            "instances": [
+              "synthetic/medium/instance1.json",
+              "synthetic/medium/instance2.json"
+            ]
+          }
+        ]
+      },
+      "large": {
+        "schemas": [
+          {
+            "id": "schema1",
+            "path": "synthetic/large/schema1.json",
+            "instances": [
+              "synthetic/large/instance1.json",
+              "synthetic/large/instance2.json"
+            ]
+          }
+        ]
+      },
+      "stress": {
+        "schemas": [
+          {
+            "id": "schema1",
+            "path": "synthetic/stress/schema1.json",
+            "instances": [
+              "synthetic/stress/instance1.json",
+              "synthetic/stress/instance2.json"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
