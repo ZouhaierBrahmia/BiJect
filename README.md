@@ -91,7 +91,7 @@ All datasets are indexed in datasets/index.json for easy programmatic access via
 
 ### Examples (`examples/`)
 - roundtrip.xq: Demonstrates a full round-trip transformation (nested → reference-based → nested).
--. input-schema.json: Sample schema used in round-trip demonstration.
+- input-schema.json: Sample schema used in round-trip demonstration.
 
 ### Getting Started
 
@@ -101,11 +101,10 @@ All datasets are indexed in datasets/index.json for easy programmatic access via
 
 You can install all Python dependencies using the included `requirements.txt`:
 
-```bash
 pip install -r requirements.txt
 
 #### Example: Run a roundtrip transformation
-```bash
+
 cd examples
 rumble --query roundtrip.xq
 
@@ -119,7 +118,6 @@ python loader.py --stats ../datasets/index.json
 ## Citation
 If you use the BiJect dataset or libraries, please cite the following (preprint / under preparation):
 
-```bibtex
 @article{BrahmiaGrandi2025,
   author    = {Zouhaier Brahmia and Fabio Grandi},
   title     = {BiJect: Bidirectional Transformations of JSON Schemas},
