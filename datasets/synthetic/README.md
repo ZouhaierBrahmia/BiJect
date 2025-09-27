@@ -42,7 +42,6 @@ Each subfolder contains:
 You can explore or validate synthetic datasets with the BiJect loader (`loader.py`):
 
 ### Validate all synthetic datasets
-```bash
 python loader.py --index datasets/index.json --dataset synthetic
 
 ### Validate only one synthetic subset
@@ -55,6 +54,6 @@ python loader.py --index datasets/index.json --dataset synthetic/stress
 python loader.py --index datasets/index.json --dataset synthetic --stats
 
 ## Metadata:
-   - Author: BiJect Artifact Team
-   - Purpose: Reproducibility, validation, and performance evaluation of bidirectional JSON Schema transformations
-   - License: CC-BY 4.0 (open dataset for research and teaching)
+- Authors: Zouhaier Brahmia and Fabio Grandi
+- Purpose: Reproducibility, validation, and performance evaluation of bidirectional JSON Schema transformations
+- License: CC-BY 4.0 (open dataset for research and teaching)

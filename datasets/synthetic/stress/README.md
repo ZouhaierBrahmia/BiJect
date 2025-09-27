@@ -19,6 +19,6 @@ crafted to push the BiJect libraries to their limits.
 
 ## Metadata
 
-- **Author:** BiJect Artifact Team
-- **Purpose:** Reproducibility, validation, and performance evaluation of bidirectional JSON Schema transformations
-- **License:** MIT License
+- Authors: Zouhaier Brahmia and Fabio Grandi
+- Purpose: Reproducibility, validation, and performance evaluation of bidirectional JSON Schema transformations
+- License: CC-BY 4.0 (open dataset for research and teaching)

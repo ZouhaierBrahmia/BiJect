@@ -12,7 +12,6 @@ A global index (`index.json`) describes all available schemas and their associat
 
 ## 📂 Directory Structure
 
-```text
 datasets/
 ├── industrial/
 │   ├── index.json
@@ -88,7 +87,6 @@ datasets/
 All datasets can be explored or validated using the BiJect Python loader (`loader.py`).  
 
 ### Validate everything
-```bash
 python loader.py --index datasets/index.json
 
 ### Validate only industrial datasets
@@ -104,6 +102,6 @@ python loader.py --index datasets/index.json --dataset synthetic/medium
 python loader.py --index datasets/index.json --stats
 
 ## ✍️ Metadata:
-   - Author: BiJect Artifact Team
-   - Purpose: Reproducibility, validation, and performance evaluation of bidirectional JSON Schema transformations
-   - License: CC-BY 4.0 (open dataset for research and teaching)
+- Authors: Zouhaier Brahmia and Fabio Grandi
+- Purpose: Reproducibility, validation, and performance evaluation of bidirectional JSON Schema transformations
+- License: CC-BY 4.0 (open dataset for research and teaching)

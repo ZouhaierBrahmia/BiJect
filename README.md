@@ -13,35 +13,27 @@ This enables schema factorization, inlining, and round-trip consistency verifica
 
 ## Repository Structure
 
+
 BiJect/
-│
-├── datasets/                   # All JSON Schema datasets (industrial + synthetic)
-│   ├── index.json              # Global index mapping all datasets
-│   ├── industrial/             # Industrial (sanitized) schemas & instances
-│   └── synthetic/              # Synthetic datasets (small, medium, large, stress)
-│
-├── src/                        # Core BiJect libraries
-│   ├── biject-factor.xq        # Factorization (nested → reference-based)
-│   ├── biject-inline.xq        # Inlining (reference-based → nested)
-│   └── biject.xq               # Wrapper re-exporting the above
-│
-├── examples/                   # Example scripts & demo inputs
-│   ├── roundtrip.xq            # Round-trip test script
-│   └── input-schema.json       # Sample schema for examples
-│
-├── tools                       # Python utilities for loading datasets, validating schemas, and computing stats.
-│
-├── requirements.txt            # Python dependencies (e.g., jsonschema) for tools and evaluation scripts
-│
-├── INSTALL.md                  # Optional installation instructions
-│
-├── CONTRIBUTING.md             # Optional contribution guidelines
-│
-├── CITATION.cff                # Citation file for Zotero/GitHub citation tools
-│
-├── README.md                   # Project overview, instructions, metadata
-│
-└── LICENSE                     # MIT License text
+├── datasets/            # All JSON Schema datasets (industrial + synthetic)
+│ ├── index.json         # Global index mapping all datasets
+│ ├── industrial/        # Industrial (sanitized) schemas & instances
+│ └── synthetic/         # Synthetic datasets (small, medium, large, stress)
+├── src/                 # Core BiJect libraries
+│ ├── biject-factor.xq   # Factorization (nested → reference-based)
+│ ├── biject-inline.xq   # Inlining (reference-based → nested)
+│ └── biject.xq          # Wrapper re-exporting the above
+├── examples/            # Example scripts & demo inputs
+│ ├── roundtrip.xq       # Round-trip test script
+│ └── input-schema.json  # Sample schema for examples
+├── tools/               # Python utilities for loading datasets, validating schemas, and computing stats
+├── requirements.txt     # Python dependencies (e.g., jsonschema) for tools and evaluation scripts
+├── INSTALL.md           # Optional installation instructions
+├── CITATION.cff         # Citation file for Zotero/GitHub citation tools
+├── README.md            # Project overview, instructions, metadata
+└── LICENSE              # MIT License text
+
+
 
 ### Note on the `transform/` Folder
 
@@ -118,13 +110,13 @@ python loader.py --stats ../datasets/index.json
 ## Citation
 If you use the BiJect dataset or libraries, please cite the following (preprint / under preparation):
 
-@article{BrahmiaGrandi2025,
-  author    = {Zouhaier Brahmia and Fabio Grandi},
-  title     = {BiJect: Bidirectional Transformations of JSON Schemas},
-  journal   = {Under preparation},
-  year      = {2025},
-  note      = {All experimental artifacts, datasets, and scripts are openly available in the BiJect repository.}
-}
+@article{BrahmiaGrandi2025,  
+  author    = {Zouhaier Brahmia and Fabio Grandi},  
+  title     = {BiJect: Semantics-Preserving Bidirectional Transformations of JSON Schema Design Styles — Formal Foundations and JSONiq-Based Implementation},  
+  journal   = {Under preparation},  
+  year      = {2025},  
+  note      = {All experimental artifacts, datasets, and scripts are openly available in the BiJect repository.}  
+}  
 
 For automated citation, a CITATION.cff file is provided in the root of the repository.
 
@@ -135,5 +127,8 @@ For automated citation, a CITATION.cff file is provided in the root of the repos
 
    
 ## License
-This repository is released under the MIT License.
+This repository is released as follows:
+- Code (in `src/`, `examples/`, `tools/`): MIT License.  
+- Datasets (in `datasets/`): CC-BY 4.0 (open datasets for research and teaching).  
+
 © 2025 Zouhaier Brahmia and Fabio Grandi. See `LICENSE.txt` for details.

@@ -65,7 +65,6 @@ Each schema has three representative instances:
 You can explore or validate the dataset using the BiJect loader utility (`loader.py`):
 
 ### List available schema IDs
-```bash
 python loader.py --index datasets/index.json --list
 
 ### Validate all instances against schemas
@@ -80,6 +79,6 @@ python loader.py --index datasets/index.json --dataset industrial --stats
 
 
 ## ✍️ Metadata:
-   - Author: BiJect Artifact Team
-   - Purpose: Reproducibility, validation, and performance evaluation of bidirectional JSON Schema transformations
-   - License: CC-BY 4.0 (open dataset for research and teaching)
+- Authors: Zouhaier Brahmia and Fabio Grandi
+- Purpose: Reproducibility, validation, and performance evaluation of bidirectional JSON Schema transformations
+- License: CC-BY 4.0 (open dataset for research and teaching)
