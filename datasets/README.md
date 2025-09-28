@@ -12,40 +12,40 @@ A global index (`index.json`) describes all available schemas and their associat
 
 ## 📂 Directory Structure
 
-datasets/
-├── industrial/
-│   ├── index.json
-│   ├── schema-order.json
-│   ├── schema-account.json
-│   ├── schema-sensor.json
-│   ├── schema-supplychain.json
-│   ├── schema-userprofile.json
-│   └── instances/
-│       ├── order1.json ... order3.json
-│       ├── account1.json ... account3.json
-│       ├── sensor1.json ... sensor3.json
-│       ├── supplychain1.json ... supplychain3.json
-│       └── userprofile1.json ... userprofile3.json
-│
-├── synthetic/
-│   ├── small/
-│   │   ├── schema1.json
-│   │   ├── instance1.json
-│   │   └── instance2.json
-│   ├── medium/
-│   │   ├── schema1.json
-│   │   ├── instance1.json
-│   │   └── instance2.json
-│   ├── large/
-│   │   ├── schema1.json
-│   │   ├── instance1.json
-│   │   └── instance2.json
-│   └── stress/
-│       ├── schema1.json
-│       ├── instance1.json
-│       └── instance2.json
-│
-└── index.json   # global index across all datasets
+datasets/  
+├── industrial/  
+│   ├── index.json  
+│   ├── schema-order.json  
+│   ├── schema-account.json  
+│   ├── schema-sensor.json  
+│   ├── schema-supplychain.json  
+│   ├── schema-userprofile.json  
+│   └── instances/  
+│       ├── order1.json ... order3.json  
+│       ├── account1.json ... account3.json  
+│       ├── sensor1.json ... sensor3.json  
+│       ├── supplychain1.json ... supplychain3.json  
+│       └── userprofile1.json ... userprofile3.json  
+│  
+├── synthetic/  
+│   ├── small/  
+│   │   ├── schema1.json  
+│   │   ├── instance1.json  
+│   │   └── instance2.json  
+│   ├── medium/  
+│   │   ├── schema1.json  
+│   │   ├── instance1.json  
+│   │   └── instance2.json  
+│   ├── large/  
+│   │   ├── schema1.json  
+│   │   ├── instance1.json  
+│   │   └── instance2.json  
+│   └── stress/  
+│       ├── schema1.json  
+│       ├── instance1.json  
+│       └── instance2.json  
+│  
+└── index.json   # global index across all datasets  
 
 ---
 
