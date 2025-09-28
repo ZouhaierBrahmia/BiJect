@@ -10,29 +10,26 @@ BiJect provides:
 - Reproducibility materials for evaluation (roundtrip tests, validation drivers, benchmarks).
 This enables schema factorization, inlining, and round-trip consistency verification in both industrial and synthetic scenarios.
 
-
 ## Repository Structure
 
-
 BiJect/  
-├── datasets/            # All JSON Schema datasets (industrial + synthetic)  
-│ ├── index.json         # Global index mapping all datasets  
-│ ├── industrial/        # Industrial (sanitized) schemas & instances  
-│ └── synthetic/         # Synthetic datasets (small, medium, large, stress)  
-├── src/                 # Core BiJect libraries  
-│ ├── biject-factor.xq   # Factorization (nested → reference-based)  
-│ ├── biject-inline.xq   # Inlining (reference-based → nested)  
-│ └── biject.xq          # Wrapper re-exporting the above  
-├── examples/            # Example scripts & demo inputs  
-│ ├── roundtrip.xq       # Round-trip test script  
-│ └── input-schema.json  # Sample schema for examples  
-├── tools/               # Python utilities for loading datasets, validating schemas, and computing stats  
-├── requirements.txt     # Python dependencies (e.g., jsonschema) for tools and evaluation scripts  
-├── INSTALL.md           # Optional installation instructions  
-├── CITATION.cff         # Citation file for Zotero/GitHub citation tools  
-├── README.md            # Project overview, instructions, metadata  
-└── LICENSE              # MIT License text  
-
+  ├── datasets/                # All JSON Schema datasets (industrial + synthetic)  
+  │     ├── index.json         # Global index mapping all datasets  
+  │     ├── industrial/        # Industrial (sanitized) schemas & instances  
+  │     └── synthetic/         # Synthetic datasets (small, medium, large, stress)  
+  ├── src/                     # Core BiJect libraries  
+  │     ├── biject-factor.xq   # Factorization (nested → reference-based)  
+  │     ├── biject-inline.xq   # Inlining (reference-based → nested)  
+  │     └── biject.xq          # Wrapper re-exporting the above  
+  ├── examples/                # Example scripts & demo inputs  
+  │     ├── roundtrip.xq       # Round-trip test script  
+  │     └── input-schema.json  # Sample schema for examples  
+  ├── tools/                   # Python utilities for loading datasets, validating schemas, and computing stats  
+  ├── requirements.txt         # Python dependencies (e.g., jsonschema) for tools and evaluation scripts  
+  ├── INSTALL.md               # Optional installation instructions  
+  ├── CITATION.cff             # Citation file for Zotero/GitHub citation tools  
+  ├── README.md                # Project overview, instructions, metadata  
+  └── LICENSE                  # MIT License text  
 
 
 ### Note on the `transform/` Folder
