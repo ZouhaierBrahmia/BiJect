@@ -18,10 +18,9 @@ import module namespace inline = "http://example.org/biject/inline"
 (:------------------------------------------------------
   Public API
   - biject:factor($schema as map(*)) as map(*)
+  - biject:factor($schema as map(*), $options as map(*)) as map(*)
   - biject:inline($schema as map(*)) as map(*)
-Why here there are not????:
-biject:inline($schema as map(*), $options as map(*)) as map(*) see below
-biject:factor($schema as map(*), $options as map(*)) as map(*) see below
+  - biject:inline($schema as map(*), $options as map(*)) as map(*)
 -------------------------------------------------------:)
 
 declare function biject:factor($schema as map(*)) as map(*)
