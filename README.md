@@ -13,23 +13,27 @@ This enables schema factorization, inlining, and round-trip consistency verifica
 ## Repository Structure
 
 BiJect/  
-  ├── datasets/                # All JSON Schema datasets (industrial + synthetic)  
-  │     ├── index.json         # Global index mapping all datasets  
-  │     ├── industrial/        # Industrial (sanitized) schemas & instances  
-  │     └── synthetic/         # Synthetic datasets (small, medium, large, stress)  
-  ├── src/                     # Core BiJect libraries  
-  │     ├── biject-factor.xq   # Factorization (nested → reference-based)  
-  │     ├── biject-inline.xq   # Inlining (reference-based → nested)  
-  │     └── biject.xq          # Wrapper re-exporting the above  
-  ├── examples/                # Example scripts & demo inputs  
-  │     ├── roundtrip.xq       # Round-trip test script  
-  │     └── input-schema.json  # Sample schema for examples  
-  ├── tools/                   # Python utilities for loading datasets, validating schemas, and computing stats  
-  ├── requirements.txt         # Python dependencies (e.g., jsonschema) for tools and evaluation scripts  
-  ├── INSTALL.md               # Optional installation instructions  
-  ├── CITATION.cff             # Citation file for Zotero/GitHub citation tools  
-  ├── README.md                # Project overview, instructions, metadata  
-  └── LICENSE                  # MIT License text  
+  ├── datasets/                  # All JSON Schema datasets (sanitized industrial + synthetic)  
+  │     ├── index.json           # Global index mapping all datasets  
+  │     ├── industrial/          # Industrial (sanitized) schemas & instances  
+  │     └── synthetic/           # Synthetic datasets (small, medium, large, stress)  
+  ├── src/                       # Core BiJect libraries (used in experiments)  
+  │     ├── biject-factor.xq     # Factorization (nested → reference-based)  
+  │     ├── biject-inline.xq     # Inlining (reference-based → nested)  
+  │     └── biject.xq            # Wrapper re-exporting factor & inline
+  ├── demo/                      # Illustrative scripts (used for demonstration only)  
+  │     ├── nest-2-ref.xq        # Direct factoring script  
+  │     ├── ref-2-nest.xq        # Direct inlining script  
+  │     └── biject-unified.xq    # Illustrative unified module  
+  ├── examples/                  # Usage examples combining datasets + src/ modules  
+  │     ├── roundtrip.xq         # Round-trip test script  
+  │     └── input-schema.json    # Sample schema for examples  
+  ├── tools/                     # Python utilities for loading datasets, validating schemas, and computing stats  
+  ├── requirements.txt           # Python dependencies (e.g., jsonschema) for tools and evaluation scripts  
+  ├── INSTALL.md                 # Optional installation instructions  
+  ├── CITATION.cff               # Citation file for Zotero/GitHub citation tools  
+  ├── README.md                  # Project overview, instructions, metadata  
+  └── LICENSE                    # MIT License text  
 
 
 ### Note on the `transform/` Folder
@@ -67,9 +71,33 @@ All datasets are indexed in datasets/index.json for easy programmatic access via
 
 
 ### Libraries (`src/`)
-- biject-factor.xq: Converts nested schemas into reference-based schemas (factorization).
-- biject-inline.xq: Converts reference-based schemas back into nested schemas (inlining).
-- biject.xq: Wrapper module that re-exports the above libraries for convenience.
+- biject-factor.xq: the Factoring library that converts nested schemas into reference-based schemas.
+- biject-inline.xq: the Inlining library that converts reference-based schemas back into nested schemas.
+- biject.xq: the Wrapper module that re-exports the above libraries for convenience.
+
+### Demonstration (`demo/`)
+- nest-2-ref.xq: the direct factoring script that transforms a nested schema into a reference-based schema.
+- ref-2-nest.xq: the direct inlining script that transforms a reference-based schema into a nested schema.
+- biject-unified.xq: the illustrative module that unifies the above two direct transformation scripts.
+
+### 🔹 About src/ vs demo/
+
+1. src/
+
+Contains the JSONiq libraries (biject-factor.xq, biject-inline.xq) and the wrapper module (biject.xq).
+
+These were used in our experiments and are the recommended entry point for practical integration in projects.
+
+2. demo/
+
+Contains the illustrative scripts described in Section 7.1 and Appendix A2 of the BiJect article:
+
+- Two direct transformation scripts (nest-2-ref.xq, ref-2-nest.xq).
+
+- One unified illustrative module (biject-unified.xq) exposing both transformations for quick testing.
+
+These scripts are intended for demonstration and educational purposes only, and were not used in the experimental evaluation.
+
 
 ### Tools (`tools/`)
 - loader.py: Python utility to iterate over schema/instance pairs from datasets/index.json.
