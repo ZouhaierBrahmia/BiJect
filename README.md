@@ -20,7 +20,7 @@ BiJect/
   ├── src/                       # Core BiJect libraries (used in experiments)  
   │     ├── biject-factor.xq     # Factorization (nested → reference-based)  
   │     ├── biject-inline.xq     # Inlining (reference-based → nested)  
-  │     └── biject.xq            # Wrapper re-exporting factor & inline
+  │     └── biject.xq            # Wrapper re-exporting factor & inline  
   ├── demo/                      # Illustrative scripts (used for demonstration only)  
   │     ├── nest-2-ref.xq        # Direct factoring script  
   │     ├── ref-2-nest.xq        # Direct inlining script  
