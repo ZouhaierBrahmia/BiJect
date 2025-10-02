@@ -25,7 +25,7 @@ BiJect/
   │     ├── nest-2-ref.xq        # Direct factoring script  
   │     ├── ref-2-nest.xq        # Direct inlining script  
   │     └── biject-unified.xq    # Illustrative unified module  
-  ├── examples/                  # Usage examples combining datasets + src/ modules  
+  ├── examples/                  # Usage examples of src/ modules with local input files  
   │     ├── roundtrip.xq         # Round-trip test script  
   │     └── input-schema.json    # Sample schema for examples  
   ├── tools/                     # Python utilities for loading datasets, validating schemas, and computing stats  
@@ -73,20 +73,20 @@ All datasets are indexed in datasets/index.json for easy programmatic access via
 ### Libraries (`src/`)
 - biject-factor.xq: the Factoring library that converts nested schemas into reference-based schemas.
 - biject-inline.xq: the Inlining library that converts reference-based schemas back into nested schemas.
-- biject.xq: the Wrapper module that re-exports the above libraries for convenience.
+- biject.xq: the wrapper module that re-exports the two above libraries under a single namespace for convenience.
 
 ### Demonstration (`demo/`)
-- nest-2-ref.xq: the direct factoring script that transforms a nested schema into a reference-based schema.
-- ref-2-nest.xq: the direct inlining script that transforms a reference-based schema into a nested schema.
-- biject-unified.xq: the illustrative module that unifies the above two direct transformation scripts.
+- nest-2-ref.xq: direct factoring script that transforms a nested schema into a reference-based schema.
+- ref-2-nest.xq: direct inlining script that transforms a reference-based schema into a nested schema.
+- biject-unified.xq: an illustrative module that unifies the two above direct scripts into one file with both transformations.
 
 ### 🔹 About src/ vs demo/
 
 1. src/
 
-Contains the JSONiq libraries (biject-factor.xq, biject-inline.xq) and the wrapper module (biject.xq).
+Contains the reusable JSONiq libraries (biject-factor.xq, biject-inline.xq) and the wrapper module (biject.xq).
 
-These were used in our experiments and are the recommended entry point for practical integration in projects.
+These were the modules used in our experiments and are the recommended entry point for real projects and integrations.
 
 2. demo/
 
@@ -96,7 +96,7 @@ Contains the illustrative scripts described in Section 7.1 and Appendix A2 of th
 
 - One unified illustrative module (biject-unified.xq) exposing both transformations for quick testing.
 
-These scripts are intended for demonstration and educational purposes only, and were not used in the experimental evaluation.
+These scripts are intended for demonstration and educational purposes only. They were not used in the experimental evaluation.
 
 
 ### Tools (`tools/`)
