@@ -20,44 +20,44 @@ roundtrip_test.py	     |   Automate nested → reference-based → nested round-
 > Adjust paths (e.g., `../datasets/index.json`) if running from another location.
 
 
-1. List available datasets
+1. List available datasets  
 python loader.py --list
 
-Example output:
-industrial
-industrial/order
-synthetic/small
-synthetic/small/schema1
+Example output:  
+industrial  
+industrial/order  
+synthetic/small  
+synthetic/small/schema1  
 ...
 
-2. Print schema-instance pairs
+2. Print schema-instance pairs  
 python loader.py --pairs --dataset industrial
 
-Or as JSON:
+Or as JSON:  
 python loader.py --pairs --dataset industrial --json
 
-3. Validate all instances in a dataset
+3. Validate all instances in a dataset  
 python loader.py --dataset synthetic/medium
 
 This will print success/failure for each schema-instance pair.
 
-4. Compute dataset statistics
+4. Compute dataset statistics  
 python stats.py --index ../datasets/index.json
 
-Sample output:
-Dataset: industrial
-  Schemas: 5
-  Instances: 15
+Sample output:  
+Dataset: industrial  
+  Schemas: 5  
+  Instances: 15  
 
-Dataset: synthetic/small
-  Schemas: 1
-  Instances: 2
+Dataset: synthetic/small  
+  Schemas: 1  
+  Instances: 2  
 ...
 
-5. Measure validation latency
+5. Measure validation latency  
 python measure_latency.py --index ../datasets/index.json --repeats 10
 
-6. Run round-trip transformation tests
+6. Run round-trip transformation tests  
 python roundtrip_test.py --index ../datasets/index.json
 
 ## Requirements
@@ -65,13 +65,13 @@ python roundtrip_test.py --index ../datasets/index.json
 - Python 3.9+
 - Dependencies listed in requirements.txt
 
-To install dependencies: 
+To install dependencies:   
 pip install -r requirements.txt
 
 ## Testing
 
-To quickly check that all tools run without error:
-python validate.py --index ../datasets/index.json
+To quickly check that all tools run without error:  
+python validate.py --index ../datasets/index.json  
 python stats.py --index ../datasets/index.json
 
 ## Metadata

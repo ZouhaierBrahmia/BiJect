@@ -45,9 +45,9 @@ You can explore or validate synthetic datasets with the BiJect loader (`loader.p
 python loader.py --index datasets/index.json --dataset synthetic
 
 ### Validate only one synthetic subset
-python loader.py --index datasets/index.json --dataset synthetic/small
-python loader.py --index datasets/index.json --dataset synthetic/medium
-python loader.py --index datasets/index.json --dataset synthetic/large
+python loader.py --index datasets/index.json --dataset synthetic/small  
+python loader.py --index datasets/index.json --dataset synthetic/medium  
+python loader.py --index datasets/index.json --dataset synthetic/large  
 python loader.py --index datasets/index.json --dataset synthetic/stress
 
 ### Quick dataset health check
